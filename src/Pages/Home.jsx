@@ -1,17 +1,17 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 import './Home.css'
 
-const Home = () => {
 
-
+const Test = () => {
   return (
-    <div className='home'>
-        
-        <Link className='linkk' to='/test/viamo'><h3>Viamo Testing</h3></Link>
-        <Link className='linkk' to='/test/nebula'><h3>Nebula Testing</h3></Link>
+    <div className='test'>
+        <Link className='linkk' to='/viamo'><h3>Viamo Testing</h3></Link>
+        <Link className='linkk' to='/nebula'><h3>Nebula Testing</h3></Link>
+        <Outlet/>
     </div>
+    
   )
 }
 
-export default Home
+export default Test
