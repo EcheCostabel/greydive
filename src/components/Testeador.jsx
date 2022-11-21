@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import db from '../api/db.json'
 import { useParams } from 'react-router-dom';
-import { Player } from 'video-react';
 import Tarea from './Tarea';
 import './Testeador.css'
 
@@ -17,13 +16,18 @@ const Testeador = () => {
     
   return (
     <div className='tester'>
-        <h1>{item.cliente}</h1>
-        <h1>Test: Test de usabilidad en el sitio web</h1>
-        <h2>Testeador {index+1}</h2>
-        <Player fluid={false} width={1300} height={1100} src={item.linkVideo} playsInline={false}/>
-        <p id='text'>{item.transcripcion}</p>
-        <h2>Tareas</h2>
-        <h3>Escenario: {item.escenario}</h3>
+        <h1 className='nombreCliente'>{item.cliente}</h1>
+        <h1 className='nombretest'>Test: Test de usabilidad en el sitio web</h1><br />
+        <h2 className='testeadorr'>Testeador {index+1}</h2>
+      
+        <video fluid src={item.linkVideo} data-active={true} controls={true} width={1080} height={660} className='video'/>
+        <h1 className='titulotranscripcion'>Transcripcion</h1>
+
+        
+        <p id='text' className='transcripcion'>{item.transcripcion}</p>
+        
+        <h2 className='tareas'>Tareas</h2>
+        <h3 className='escenario'>Escenario: {item.escenario}</h3>
         <hr/>
         {item.preguntas?.map(( item, index) => <Tarea key={item.texto} item={item} index={index}/>)}
     </div>

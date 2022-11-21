@@ -1,5 +1,5 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import './App.css'
+// import './App.css'
 import Testeador from './components/Testeador'
 import Home from './Pages/Home'
 import Test from './Pages/Test'

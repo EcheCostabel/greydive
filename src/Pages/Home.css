@@ -1,15 +1,18 @@
-.home {
-    height: 81vh;
+.home{
+    height: 100%;
     width: 100%;
     background-color: #292643;
 
 }
 
-h3 {
-    margin: 80px;
+h3{
+    
     color: #fff;
-    text-decoration: none;
+   
     
 }
 
+.linkk{
+    text-decoration: none;
+}
 
