@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import db from '../db.json'
+import db from '../api/db.json'
 import { useParams } from 'react-router-dom';
 import { Player } from 'video-react';
 import Tarea from './Tarea';
+import './Testeador.css'
 
 const Testeador = () => {
     const params = useParams()
@@ -15,7 +16,7 @@ const Testeador = () => {
     }, [params])
     
   return (
-    <div>
+    <div className='tester'>
         <h1>{item.cliente}</h1>
         <h1>Test: Test de usabilidad en el sitio web</h1>
         <h2>Testeador {index+1}</h2>
