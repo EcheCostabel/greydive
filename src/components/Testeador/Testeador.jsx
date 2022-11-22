@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import json from '../../api/db.json'
-import ReactPlayer from "react-player";
 import { useParams } from 'react-router-dom';
 import Tarea from '../Tarea/Tarea';
 import './Testeador.css'
@@ -22,14 +21,10 @@ const Testeador = () => {
       <h2 className='testeadorr'>Testeador {index + 1}</h2>
 
 
+
+
+      <video className='video' src={item.linkVideo} controls={true}></video>
       
-      <ReactPlayer
-            className="video"
-            url={item.linkVideo}
-            controls={true}
-            width='90%'
-            heigth='100%'
-          />
         
 
       <h1 className='titulotranscripcion'>Transcripción</h1>
