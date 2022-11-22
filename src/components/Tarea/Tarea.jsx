@@ -1,6 +1,10 @@
 import React from 'react'
 import './Tarea.css'
+
+
+
 const Tarea = ({item, index}) => {
+  
   return (
     <div className='tareaa'>
         <p className='tarea'>Tarea {index+1}:</p>

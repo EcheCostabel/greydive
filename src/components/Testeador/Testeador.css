@@ -119,3 +119,15 @@ body{
 }
 
 
+@media (max-width: 1200px){
+    .video{
+        width: 90%;
+        height: 100%;
+        padding-right: 40px;
+    }
+
+    .transcripcion{
+        margin-right: 40px;
+    }
+}
+
