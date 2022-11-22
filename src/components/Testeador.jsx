@@ -21,7 +21,7 @@ const Testeador = () => {
         <h2 className='testeadorr'>Testeador {index+1}</h2>
       
         <video fluid src={item.linkVideo} data-active={true} controls={true} width={1080} height={660} className='video'/>
-        <h1 className='titulotranscripcion'>Transcripcion</h1>
+        <h1 className='titulotranscripcion'>Transcripción</h1>
 
         
         <p id='text' className='transcripcion'>{item.transcripcion}</p>

@@ -1,4 +1,4 @@
-Challenge para greydive hecho por Exequiel, Costabel.
+Challenge para greydive hecho por Exequiel Costabel.
 
 
 
